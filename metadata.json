@@ -1,0 +1,6 @@
+{
+  "name": "Yunnan Meteorological Lab",
+  "description": "云南气象灾害重点实验室 (Yunnan Meteorological Lab) — 致力于气象灾害监测、早期预警、气候资源优化及大气科学的前沿科学研究与学术交流平台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,233 @@
+import type {
+  AchievementItem,
+  FeaturedPublication,
+  MetricItem,
+  ProjectGroup,
+} from '../types';
+
+/**
+ * 本文件内容整理自实验室建设情况总结报告（2025.02）与 2025 年度运行总结报告。
+ * 统计口径均为实验室建设期（2023—2025）。
+ */
+
+export const outputMetrics: MetricItem[] = [
+  {
+    id: 'metric-papers',
+    labelZh: '标注论文',
+    value: '80+',
+    noteZh: '总影响因子超 320；一区 13 篇、二区 35 篇',
+    icon: 'FileText',
+  },
+  {
+    id: 'metric-nature',
+    labelZh: 'Nature 系列期刊',
+    value: '3',
+    noteZh: 'Nature Geoscience 1 篇，npj 2 篇',
+    icon: 'Sparkles',
+  },
+  {
+    id: 'metric-projects',
+    labelZh: '新增科研项目',
+    value: '41',
+    noteZh: '国家级 20 项、省部级 21 项，经费 4500 余万元',
+    icon: 'Award',
+  },
+  {
+    id: 'metric-ipr',
+    labelZh: '知识产权与著作',
+    value: '6',
+    noteZh: '专利 2 项、软著 3 项、实习指导书 1 部',
+    icon: 'ShieldCheck',
+  },
+];
+
+export const featuredPublications: FeaturedPublication[] = [
+  {
+    id: 'feat-1',
+    titleEn: 'Recent pronounced warming on the Mongolian Plateau boosted by internal climate variability',
+    titleZh: '内部气候变率放大了近期蒙古高原的显著增暖',
+    authors: 'Cai Q., Chen W., Chen S., Xie S.-P., Piao J., Ma T., Lan X.',
+    journal: 'Nature Geoscience',
+    year: 2024,
+    doi: '10.1038/s41561-024-01377-6',
+    tier: 'Nature 子刊',
+    topicZh: '内部气候变率与区域增暖',
+  },
+  {
+    id: 'feat-2',
+    titleEn: 'Strengthened impact of boreal winter North Pacific Oscillation on ENSO development in warming climate',
+    titleZh: '增暖气候背景下北太平洋涛动对 ENSO 发展影响的增强',
+    authors: 'Chen S., Chen W., Xie S.-P., Yu B., Wu R., Wang Z., Lan X., Graf H.-F.',
+    journal: 'npj Climate and Atmospheric Science',
+    year: 2024,
+    doi: '10.1038/s41612-024-00615-3',
+    tier: 'Nature Portfolio',
+    topicZh: '海气相互作用与 ENSO',
+  },
+  {
+    id: 'feat-3',
+    titleEn: 'Faster dieback of rainforests altering tropical carbon sinks under climate change',
+    titleZh: '气候变化下雨林加速退化对热带碳汇的改变',
+    authors: 'Nath D., Nath R., Chen W.',
+    journal: 'npj Climate and Atmospheric Science',
+    year: 2024,
+    doi: '10.1038/s41612-024-00793-0',
+    tier: 'Nature Portfolio',
+    topicZh: '生态系统响应与碳循环',
+  },
+  {
+    id: 'feat-4',
+    titleEn: 'Attribution analysis of the persistent and extreme drought in southwest China during 2022–2023',
+    titleZh: '2022—2023 年中国西南持续性极端干旱的归因分析',
+    authors: 'Ma T., Chen W., Cai Q., Dong Z., Wang L., Hu P., Gao L., Garfinkel C. I.',
+    journal: 'Environmental Research Letters',
+    year: 2024,
+    doi: '10.1088/1748-9326/ad8171',
+    tier: '中科院二区',
+    topicZh: '极端干旱成因与归因',
+  },
+  {
+    id: 'feat-5',
+    titleEn: 'Revisiting the linkage between the Pacific–Japan pattern and Indian summer monsoon rainfall: the crucial role of the Maritime Continent',
+    titleZh: '重新审视太平洋—日本型与印度夏季风降水的联系：海洋性大陆的关键作用',
+    authors: 'Hu P., Chen W., Chen S., Yang R., Wang L., Liu Y.',
+    journal: 'Geophysical Research Letters',
+    year: 2024,
+    doi: '10.1029/2023GL106982',
+    tier: '中科院一区',
+    topicZh: '季风系统相互作用',
+  },
+  {
+    id: 'feat-6',
+    titleEn: 'The first observational evidence of a mixed Rossby–gravity wave contribution to triggering the onset process of the South China Sea summer monsoon',
+    titleZh: '混合罗斯贝—重力波触发南海夏季风爆发过程的首个观测证据',
+    authors: 'Hu P., Huangfu J., Chen W., Feng T., Wang L., Tang Y.',
+    journal: 'Environmental Research Letters',
+    year: 2023,
+    doi: '10.1088/1748-9326/ad07b3',
+    tier: '中科院二区',
+    topicZh: '季风爆发机理',
+  },
+  {
+    id: 'feat-7',
+    titleEn: 'A new Southwest Vortex objective identification algorithm based on precipitation perspective',
+    titleZh: '基于降水视角的西南涡客观识别新算法',
+    authors: 'Wang Q., Cen S., Huangfu J., Lai X., Yang R., Chen W., Wang L., Tang Y., Liu K.',
+    journal: 'Environmental Research Letters',
+    year: 2024,
+    doi: '10.1088/1748-9326/ad86d0',
+    tier: '中科院二区',
+    topicZh: '灾害性天气系统识别',
+  },
+  {
+    id: 'feat-8',
+    titleEn: 'Rainy season onset over the Southeast Asia low-latitude highlands: objective definition and relation with spring drought',
+    titleZh: '东南亚低纬高原雨季开始期的客观定义及其与春旱的关系',
+    authors: 'Wang J., Ding D., Hu P., Chen W., Yang R., Wang L., Cai Q., Zhao S., Deng J.',
+    journal: 'Climate Dynamics',
+    year: 2025,
+    doi: '10.1007/s00382-024-07502-w',
+    tier: '中科院二区',
+    topicZh: '低纬高原雨季与春旱',
+  },
+  {
+    id: 'feat-9',
+    titleEn: 'The strengthened linkage between ENSO and the Eurasian Pattern since the late 1980s',
+    titleZh: '20 世纪 80 年代末以来 ENSO 与欧亚遥相关型联系的增强',
+    authors: 'Cai Q., Chen W., Chen S., Ma T., An X., Li Z.',
+    journal: 'Journal of Climate',
+    year: 2024,
+    doi: '10.1175/JCLI-D-23-0402.1',
+    tier: '中科院二区',
+    topicZh: '外源强迫与环流遥相关',
+  },
+  {
+    id: 'feat-10',
+    titleEn: 'Impact of the winter regional Hadley circulation over western Pacific on the frequency of following summer tropical cyclone landfalling in China',
+    titleZh: '西太平洋冬季区域哈得来环流对次年夏季登陆中国台风频数的影响',
+    authors: 'Huang R., Chen S., Chen W., Wu R., Wang Z., Hu P., Wu L., Wang L., Huangfu J.',
+    journal: 'Journal of Climate',
+    year: 2024,
+    doi: '10.1175/JCLI-D-23-0610.1',
+    tier: '中科院二区',
+    topicZh: '台风活动与气候预测',
+  },
+];
+
+export const projectGroups: ProjectGroup[] = [
+  {
+    id: 'proj-national',
+    titleZh: '国家级科研项目',
+    countZh: '20 项',
+    fundingZh: '经费 804 万元',
+    itemsZh: [
+      '国自然重点 1 项',
+      '国自然面上 6 项',
+      '国自然地区 3 项',
+      '国自然青年 6 项',
+      '博士后科学基金 1 项',
+    ],
+  },
+  {
+    id: 'proj-provincial',
+    titleZh: '省部级科研项目',
+    countZh: '21 项',
+    fundingZh: '经费超 3700 万元',
+    itemsZh: [
+      '省重点研发 1 项',
+      '省基础研究重大 2 项',
+      '省基础研究重点 2 项',
+      '其他省部级 16 项',
+    ],
+  },
+  {
+    id: 'proj-open',
+    titleZh: '实验室开放课题',
+    countZh: '近 10 项',
+    fundingZh: '经费超 20 万元',
+    itemsZh: [
+      '方向由学术委员会审议',
+      '申请由管理委员会优选拨付',
+      '揭榜挂帅项目 2 项',
+    ],
+  },
+];
+
+export const achievementItems: AchievementItem[] = [
+  {
+    id: 'ach-award',
+    titleZh: '入选 2024 中国气候研究重大进展',
+    descZh: '1 项成果入选年度重大进展；获云南省技术进步二等奖 1 项。',
+    icon: 'Trophy',
+  },
+  {
+    id: 'ach-ipr',
+    titleZh: '专利与软件著作权',
+    descZh: '获批专利 2 项、软著 3 项，示范应用 3 个。',
+    icon: 'FileCheck',
+  },
+  {
+    id: 'ach-book',
+    titleZh: '出版教学著作',
+    descZh: '出版横断山区实习指导书，新开专业实习课程两轮。',
+    icon: 'BookOpen',
+  },
+  {
+    id: 'ach-course',
+    titleZh: '一流课程与教学名师',
+    descZh: '国家级一流课程 1 门、省级 2 门；全国气象教学名师 2 人。',
+    icon: 'GraduationCap',
+  },
+  {
+    id: 'ach-talent',
+    titleZh: '人才与团队建设',
+    descZh: '引进高层次人才 16 人，培育长江学者 1 人，省级人才称号 16 人次。',
+    icon: 'Users',
+  },
+  {
+    id: 'ach-discipline',
+    titleZh: '学科与学位点建设',
+    descZh: '获批气象专业博士点，博士后站升国家级，大气科学入选省级一流。',
+    icon: 'Building2',
+  },
+];

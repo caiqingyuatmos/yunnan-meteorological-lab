@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="261 79 370 371" role="img" aria-label="MetMek emblem">
+  <defs>
+    <linearGradient id="emblemStroke" x1="446" y1="79" x2="446" y2="449" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F7D154"/>
+      <stop offset="32%" stop-color="#F5A623"/>
+      <stop offset="68%" stop-color="#E67E22"/>
+      <stop offset="100%" stop-color="#A85A12"/>
+    </linearGradient>
+    <linearGradient id="emblemFill" x1="446" y1="130" x2="446" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE082" stop-opacity="0.42"/>
+      <stop offset="48%" stop-color="#FF9800" stop-opacity="0.58"/>
+      <stop offset="100%" stop-color="#BF5B04" stop-opacity="0.72"/>
+    </linearGradient>
+    <radialGradient id="emblemGlow" cx="446" cy="264" r="185" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE082" stop-opacity="0.22"/>
+      <stop offset="72%" stop-color="#FF8F00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8B4513" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="emblemClip">
+      <circle cx="446" cy="264" r="183"/>
+    </clipPath>
+  </defs>
+  <circle cx="446" cy="264" r="185" fill="url(#emblemGlow)"/>
+  <circle cx="446" cy="264" r="185" fill="none" stroke="url(#emblemStroke)" stroke-width="3" stroke-linecap="round"/>
+  <g clip-path="url(#emblemClip)" stroke="url(#emblemStroke)" fill="url(#emblemFill)" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke-width="1.95" opacity="0.92">
+      <ellipse cx="446" cy="264" rx="183" ry="48"/>
+      <ellipse cx="446" cy="264" rx="183" ry="99"/>
+      <ellipse cx="446" cy="264" rx="183" ry="154"/>
+      <path d="M446 81 C 345 145, 345 383, 446 447"/>
+      <path d="M446 81 C 547 145, 547 383, 446 447"/>
+      <path d="M263 264 C 342 188, 550 188, 629 264"/>
+      <path d="M263 264 C 342 340, 550 340, 629 264"/>
+      <path d="M333 81 C 388 264, 388 264, 333 447" opacity="0.78"/>
+      <path d="M559 81 C 504 264, 504 264, 559 447" opacity="0.78"/>
+    </g>
+    <g fill="none" stroke-width="3.15">
+      <path d="M275 168 H338 C347 168 350 175 345 184 C338 195 322 201 309 206 C297 211 293 220 300 229 C308 240 326 244 341 240"/>
+      <path d="M278 236 H324"/>
+      <path d="M275 304 H338 C347 304 350 297 345 288 C338 277 322 271 309 266 C297 261 293 252 300 243 C308 232 326 228 341 232"/>
+    </g>
+    <g stroke-width="2.6">
+      <path d="M486 128 C467 110 439 110 425 127 C410 119 386 123 378 142 C361 144 351 161 357 178 C347 193 357 214 378 218 C386 237 414 243 433 230 C448 241 477 236 486 215 C505 213 515 194 508 177 C519 162 512 139 486 128 Z"/>
+    </g>
+    <g fill="none" stroke-width="2.4" opacity="0.92">
+      <path d="M514 238 L526 262"/>
+      <path d="M528 234 L540 258"/>
+      <path d="M542 238 L554 262"/>
+      <path d="M556 234 L568 258"/>
+      <path d="M570 238 L582 262"/>
+    </g>
+    <g stroke-width="2.2">
+      <path d="M286 368 L348 258 L392 302 L446 276 L496 234 L556 298 L598 328 L598 447 L286 447 Z"/>
+      <path d="M348 258 L392 302 L446 276" fill="none" stroke-width="1.8" opacity="0.85"/>
+      <path d="M446 276 L496 234 L556 298" fill="none" stroke-width="1.8" opacity="0.85"/>
+    </g>
+    <path d="M438 302 C456 320 465 342 468 364 C471 386 482 402 508 416 C534 428 560 424 580 406 C594 392 602 372 594 354 C586 336 562 328 540 334 C518 340 500 326 488 308 C476 290 452 284 438 302 Z" stroke-width="2.4"/>
+  </g>
+</svg>

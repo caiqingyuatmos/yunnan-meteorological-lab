@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 17px;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    font-family: "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+    color: #1e293b;
+    background: #edf3f8;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: #b9d7ea;
+    color: #0d1d31;
+  }
+
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 3px solid #4f94c4;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .site-shell {
+    background:
+      radial-gradient(circle at 8% 0%, rgba(125, 184, 220, 0.14), transparent 28rem),
+      linear-gradient(180deg, #f5f8fb 0%, #edf3f8 52%, #f7f9fb 100%);
+  }
+
+  .surface-card {
+    border: 1px solid rgba(185, 215, 234, 0.72);
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 14px 40px rgba(22, 48, 79, 0.07);
+  }
+}
+
+@theme {
+  /* 海军蓝品牌色（取自 METMEK Logo 主色 #1a365d） */
+  --color-brand-50: #eff5fa;
+  --color-brand-100: #dcebf5;
+  --color-brand-200: #b9d7ea;
+  --color-brand-300: #7db8dc;
+  --color-brand-400: #4f94c4;
+  --color-brand-500: #2f6e9e;
+  --color-brand-600: #24537d;
+  --color-brand-700: #1a365d;
+  --color-brand-800: #142a49;
+  --color-brand-900: #0d1d31;
+
+  /* 兼容全站已有 orange / amber 工具类：orange = 海军蓝主色 */
+  --color-orange-50: #eff5fa;
+  --color-orange-100: #dcebf5;
+  --color-orange-150: #cbe1f0;
+  --color-orange-200: #b9d7ea;
+  --color-orange-300: #7db8dc;
+  --color-orange-400: #4f94c4;
+  --color-orange-450: #3f81b1;
+  --color-orange-500: #2f6e9e;
+  --color-orange-550: #28608c;
+  --color-orange-600: #24537d;
+  --color-orange-650: #1f446d;
+  --color-orange-700: #1a365d;
+  --color-orange-850: #122642;
+  --color-orange-900: #0d1d31;
+  --color-orange-950: #081525;
+
+  /* amber = 天蓝辅助色（取自 Logo 河流浅蓝） */
+  --color-amber-50: #f0f7fb;
+  --color-amber-100: #e1eff8;
+  --color-amber-200: #c3e0f0;
+  --color-amber-300: #9ccde5;
+  --color-amber-400: #6fb5d8;
+  --color-amber-500: #4d9cc7;
+  --color-amber-600: #3d82ab;
+  --color-amber-700: #326a8c;
+  --color-amber-800: #28536e;
+  --color-amber-950: #132a3a;
+
+  /* 中性色改为冷调蓝灰，与海军蓝更协调 */
+  --color-stone-50: #f8fafc;
+  --color-stone-100: #f1f5f9;
+  --color-stone-200: #e2e8f0;
+  --color-stone-300: #cbd5e1;
+  --color-stone-400: #94a3b8;
+  --color-stone-500: #64748b;
+  --color-stone-600: #475569;
+  --color-stone-700: #334155;
+  --color-stone-800: #1e293b;
+  --color-stone-900: #0f172a;
+  --color-stone-950: #020617;
+}
