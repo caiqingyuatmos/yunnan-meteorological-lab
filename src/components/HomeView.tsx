@@ -91,7 +91,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectNews }) 
               Our mission
             </span>
             <h2 className="mt-2 font-sans text-xl font-extrabold leading-snug tracking-tight text-brand-200 sm:whitespace-nowrap sm:text-2xl lg:text-[1.7rem]">
-              <span className="block sm:inline">筑牢西南气象灾害防线，</span>
+              <span className="block sm:inline">筑牢西南气象灾害防线 </span>
               <span className="block sm:inline">探究高原气候变化规律</span>
             </h2>
           </div>
