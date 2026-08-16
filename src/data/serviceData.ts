@@ -95,7 +95,7 @@ export const serviceSystems: ServiceSystem[] = [
       '1 km 分辨率，12 分钟循环同化，「云岭 1 号」超算运行',
       '预报产品专线传输省气象局，日 4 次 36 小时预报',
     ],
-    image: '/images/sys-climate-prediction.jpg',
+    image: './images/sys-climate-prediction.jpg',
   },
   {
     id: 'sys-climate',
@@ -106,7 +106,7 @@ export const serviceSystems: ServiceSystem[] = [
       '集成监测、预测、气候变化与「双碳」、灾害风险等模块',
       '支撑防灾减灾与应急管理预报预警业务',
     ],
-    image: '/images/sys-climate-service.jpg',
+    image: './images/sys-climate-service.jpg',
   },
   {
     id: 'sys-agri',
@@ -117,7 +117,7 @@ export const serviceSystems: ServiceSystem[] = [
       '生育期、土壤湿度与气温监测预测',
       '水稻抽扬期低温、霜冻等灾害精细化监测',
     ],
-    image: '/images/sys-agri-service.jpg',
+    image: './images/sys-agri-service.jpg',
   },
   {
     id: 'sys-subseasonal',
@@ -125,6 +125,6 @@ export const serviceSystems: ServiceSystem[] = [
     ownerZh: '云南省气候中心 · 业务运行',
     descZh: '次季节至季节尺度多模式产品集成释用，支撑短期气候预测。',
     specsZh: ['面向业务化短期气候预测'],
-    image: '/images/sys-subseasonal.jpg',
+    image: './images/sys-subseasonal.jpg',
   },
 ];

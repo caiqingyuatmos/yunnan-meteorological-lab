@@ -49,7 +49,7 @@ export const Footer: React.FC = () => {
         className="pointer-events-none absolute inset-0 opacity-[0.06]"
         aria-hidden="true"
         style={{
-          backgroundImage: 'url(/metmek-contour-texture.png)',
+          backgroundImage: 'url(./metmek-contour-texture.png)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
         <div className="max-w-2xl">
           <div className="flex items-center gap-3">
             <img
-              src="/metmek-logo.png"
+              src="./metmek-logo.png"
               alt="MetMek 实验室标识"
               className="h-14 w-14 shrink-0 rounded-full border-2 border-white/15 object-cover shadow-lg"
             />

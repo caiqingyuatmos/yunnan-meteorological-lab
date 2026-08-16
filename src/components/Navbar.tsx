@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
           aria-label="返回首页"
         >
           <img
-            src="/metmek-logo.png"
+            src="./metmek-logo.png"
             alt="MetMek 实验室标识"
             className="h-10 w-10 shrink-0 rounded-full border border-brand-100 object-cover shadow-sm sm:h-11 sm:w-11"
           />

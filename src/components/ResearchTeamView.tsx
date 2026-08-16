@@ -19,7 +19,7 @@ const MID_TITLES = new Set(['讲师', '工程师']);
 const CORE_TITLES = new Set(['教授', '教授级高级工程师']);
 
 const teamMembers: TeamDirectoryMember[] = [
-  { id: 'member-1', name: '杨若文', title: '教授', unit: '云南大学', email: 'yangruowen@ynu.edu.cn', profileUrl: '/yrw/index.html' },
+  { id: 'member-1', name: '杨若文', title: '教授', unit: '云南大学', email: 'yangruowen@ynu.edu.cn', profileUrl: './yrw/index.html' },
   { id: 'member-2', name: '曹杰', title: '教授', unit: '云南大学', email: 'caoj@ynu.edu.cn' },
   { id: 'member-3', name: '李蒙', title: '教授级高级工程师', unit: '云南省气候中心', email: 'limeng5945@sina.com' },
   { id: 'member-4', name: '赵勇', title: '教授', unit: '成都信息工程大学', email: 'zhaoy608@cuit.edu.cn' },

@@ -64,7 +64,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectNews }) 
             className="pointer-events-none absolute inset-0 z-0 opacity-[0.22]"
             aria-hidden="true"
             style={{
-              backgroundImage: 'url(/metmek-contour-texture.png)',
+              backgroundImage: 'url(./metmek-contour-texture.png)',
               backgroundSize: 'cover',
               backgroundPosition: '70% 30%',
               backgroundRepeat: 'no-repeat',
@@ -74,7 +74,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectNews }) 
 
           <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center text-center">
             <img
-              src="/metmek-logo.png"
+              src="./metmek-logo.png"
               alt="MetMek 实验室标识"
               className="mx-auto h-24 w-24 rounded-full border-4 border-white/10 object-cover shadow-[0_12px_35px_rgba(0,0,0,0.28)] md:h-32 md:w-32"
             />
@@ -179,12 +179,12 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectNews }) 
           <video
             className="aspect-video w-full rounded-2xl bg-black object-contain"
             controls
-            poster="/videos/lab-intro-poster.jpg"
+            poster="./videos/lab-intro-poster.jpg"
             preload="metadata"
             playsInline
             aria-label="云南省大湄公河次区域实验室建设成效视频"
           >
-            <source src="/videos/lab-intro.mp4" type="video/mp4" />
+            <source src="./videos/lab-intro.mp4" type="video/mp4" />
             您的浏览器暂不支持视频播放，请升级浏览器后重试。
           </video>
         </div>

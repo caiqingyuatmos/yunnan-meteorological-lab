@@ -17,7 +17,7 @@ export const labLeadership = [
     nameZh: '杨若文',
     roleZh: '实验室主任',
     titleZh: '云南大学教授，教育部「长江学者」特聘教授',
-    profileUrl: '/yrw/index.html',
+    profileUrl: './yrw/index.html',
     notesZh: [
       '云南省「云岭学者」「杰青」',
       '中国气象局横断山区灾害性天气研究中心学术委员会委员',
